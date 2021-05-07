@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* clase para el titulo que parece en la primer imagen */
+.tituloInicial{
+    position: relative;
+    bottom: 300px;
+    margin: 0 auto;
+}
+/* clase para el titulo que parece en las cajas de productos */
+.catalogosname{
+    position: relative;
+    bottom: 10rem;
+    left: 7rem;
+}
+/*estilos para la animacion de los productos*/
+.active .product_img_first{
+    display: none;
+}
+.active .product_img_second{
+    display: block;
+}
+.product_img_second{
+    display: none;
+} 

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es" class="w-auto">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Blue Banana Kids</title>
+
+</head>
+<body>
+    <!--first block with an image-->
+    <div class="container-fluid ">
+        <div class="grid xs:md:grid-cols-2 sm:md:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 bg-esmerald">
+            <p class="inline-block text-center text-white">DEVOLUCIONES GRATUITAS</p>
+            <p class="inline-block text-center text-white">ENVIOS GRATUITOS +65€</p>
+            <p class="inline-block text-center text-white">100% SOSTENIBLE</p> 
+        </div>
+       <div class="grid grid-flow-row ">
+            <img class= "w-auto xs:hidden sm:hidden md:block lg:block xl:block" src="/img/header-kids-collection-blue-banana.jpg" alt="imagen-principal" aria-label="blue banana kids">
+            <img class= "w-auto xs:block sm:block md:hidden lg:hidden xl:hidden" src="/img/header-kids-collection-blue-banana-mobile.jpg" alt="imagen-principal" aria-label="blue banana kids">
+            <div class="tituloInicial">
+                <p class="text-4xl font-bold text-white">Blue Banana KIDS</p>
+                <p class="text-xl text-white ">SHARING NEW DISCOVERIES</p>
+            </div>
+       </div>
+       <!--end first block-->
+       <!--second block with text and video-->
+       <div class="container w-auto mx-auto">
+            <div class="grid grid-flow-row grid-cols-6 p-15">
+                <div class="xs:col-span-6 sm:col-span-6 md:col-span-6 lg:col-start-2 lg:col-span-4 xl:col-start-2 xl:col-span-4">
+                    <p class="font-sans text-3xl font-bold text-center xs:p-2 sm:p-10 md:p-10 lg:p-10 xl:p-10 lg:text-4xl text-marine">Born in curiosity</p>
+                    <p class="mt-2 text-lg font-normal text-center">¿Cómo empieza un niño su aventura? Por curiosidad. La curiosidad que hace que quiera acariciar al perro, que quiera buscar cangrejos en las rocas, que quiera saltar con las olas o jugar con el barro. Esa curiosidad que hace que aprendan tan rápido. La que hace que siga escalando el árbol, haciendo la cabaña en el bosque o alejándose cada día más de casa cuando sale a jugar. Porque queremos acompañarlos en sus aventuras, hemos diseñado estas prendas especialmente para ellos.</p>
+                    <p class="mt-2 text-lg font-normal text-center"> Hechas 100% de suave algodón orgánico en Portugal y con especial atención a todos los detalles para que se conviertan en sus nuevas prendas favoritas.</p>
+                </div>
+            </div>
+            <div class="container mb-8">
+                <div class="grid grid-flow-row pt-8">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe frameborder="0" width="640" height="360" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/watch?v=ayo03tBmHIw&t=13s"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+       </div>
+       <!--end second block-->
+       <!--third block with categories-->
+       <div class="container w-auto mx-auto mt-4 mb-10">
+           <div class="max-w-screen-lg mx-auto">
+               <div class="grid gap-4 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3">
+                   <a class="catalogo" href="#">
+                       <img class="img-catalogo" src="img/categorias-web1.jpg" alt="hoodies" aria-label="Hoodies">
+                       <p class="text-2xl font-bold text-white catalogosname">HOODIES</p>
+                    </a>
+                   <a href="#">
+                       <img src="img/categorias-web3.jpg" alt="sudaderas" aria-label="Sudaderas">
+                       <p class="text-2xl font-bold text-white catalogosname">SUDADERAS</p>
+                    </a>
+                   <a href="#">
+                       <img src="img/categorias-web2.jpg" alt="camisetas" aria-label="Camisetas">
+                       <p class="text-2xl font-bold text-white catalogosname">CAMISETAS</p></a>
+               </div>
+           </div>
+       </div>
+       <!--end third block-->
+       <!--four block with products-->
+        <div class="grid">
+            <div class="p-10 font-sans text-3xl font-bold text-center lg:text-4xl text-marine">
+                <H1>HODDIES</H1>
+            </div>  
+           <div class="grid grid-flow-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-15">  
+               <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Hoodies Classic/Hoodie-bluebanana-kids-navy-classic_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Hoodies Classic/Hoodie-bluebanana-kids-navy-classic_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary ">CLASSIC KIDS BLUE HOODIE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">49€</span>  
+               </div> 
+               <div class="inline-grid bg-grey">
+                <div x-data="{ imgSecond : false }">
+                    <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                        <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Hoodies Classic/Hoodie-bluebanana-kids-pink-classic_a.jpg">
+                        <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Hoodies Classic/Hoodie-bluebanana-kids-pink-classic_b.jpg">
+                    </div>
+                </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS PINK HOODIE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">49€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Hoodies Classic/Hoodie-bluebanana-kids-cream-classic_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Hoodies Classic/Hoodie-bluebanana-kids-cream-classic_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS WHITE HOODIE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">49€</span>  
+                </div>
+              
+           </div>
+       </div>
+       <div class="grid">
+            <DIV class="p-10 font-sans text-3xl font-bold text-center lg:text-4xl text-marine">
+                <H1>SUDADERAS</H1>
+            </DIV>
+            
+            <div class="grid grid-flow-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-15">
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Sudaderas/sudaderakids-bluebanana-green_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Sudaderas/sudaderakids-bluebanana-green_b.jpg">
+                        </div>
+                    </div>
+                    
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS GREEN SWEATSHIRT</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">44€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Sudaderas/Sudadera-bluebanana-kids-yellow-classic_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Sudaderas/Sudadera-bluebanana-kids-yellow-classic_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS YELLOW SWEATSHIRT</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">44€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Sudaderas/Sudadera-bluebanana-kids-burgundy-classic_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Sudaderas/Sudadera-bluebanana-kids-burgundy-classic_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS BURGUNDY SWEATSHIRT</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">44€</span>  
+                </div>
+                
+            </div>
+        </div>
+        <div class="grid">
+            <DIV class="p-10 font-sans text-3xl font-bold text-center lg:text-4xl text-marine">
+                <H1>CLASSIC TEES</H1>
+            </DIV>
+            
+            <div class="grid grid-flow-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-15">
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/Camiseta-bluebanana-kids-white-classic_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/Camiseta-bluebanana-kids-white-classic_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS WHITE TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/camisetakids-bluebanana-skyblue_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/camisetakids-bluebanana-skyblue_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS SKY BLUE TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/Camiseta-bluebanana-kids-grey-classic_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/Camiseta-bluebanana-kids-grey-classic_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS KHAKI TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/Camiseta-bluebanana-kids-khaki-classic_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Classic/Camiseta-bluebanana-kids-khaki-classic_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">CLASSIC KIDS GREY TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                  
+            </div>
+        </div>
+        <div class="grid">
+            <DIV class="p-10 font-sans text-3xl font-bold text-center lg:text-4xl text-marine">
+                <H1>NATURE TEES </H1>
+            </DIV>
+            
+            <div class="grid flex-wrap grid-flow-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-15">
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-acqua-nature_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-acqua-nature_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">ACQUA NATURE KIDS TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-white-nature_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-white-nature_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">WHITE NATURE KIDS TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-red-nature_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-red-nature_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">RED NATURE KIDS TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                <div class="inline-grid bg-grey">
+                    <div x-data="{ imgSecond : false }">
+                        <div :class="{ 'active': imgSecond === true }" @mouseover="imgSecond = true" @mouseover.away="imgSecond = false" @touchstart="imgSecond = true" @touchend.debounce.200="imgSecond = false" class="product_img">
+                            <img class="object-cover w-full h-full product_img_first lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-peach-nature_a.jpg">
+                            <img class="object-cover w-full h-full product_img_second lazyautosizes lazyloaded" src="img/img-products/Camisetas Nature/Camiseta-kids-blue-banana-peach-nature_b.jpg">
+                        </div>
+                    </div>
+                    <span class="m-2 tracking-wider text-center uppercase product-card__title lg:text-xl text-primary">PEACH NATURE KIDS TEE</span>  
+                    <span class="pb-2 text-center text-md text-esmerald">24€</span>  
+                </div>
+                  
+            </div>
+        </div>
+        <!--end four block-->
+        <!--five block with an footer image-->
+        <div class="grid grid-flow-row pt-7">
+            <img class= mx-auto" src="/img/footer-kids-collection-blue-banana.jpg" alt="imagen-footer" aria-label="blue banana kids">
+        </div>
+        <div class="w-auto h-39 bg-esmerald xs:hidden sm:hidden md:block lg:block xl:block">
+            <div class="container pt-5 mx-auto">
+                <div class="grid grid-flow-row grid-cols-2">
+                    <p class="pt-3 text-white">CONSIGUE UN 10% DE DESCUENTO EN TU INBOX</p>
+                    <div class="form-footer">
+                        <input type="email" class="inline xs:w-40 sm:w-40 md:w-50 lg:w-80 xl:w-80 form-input" placeholder="ESCRIBE TU EMAIL"> </input>
+                        <input type="submit" class="inline px-4 py-2 -mx-1 font-bold text-white bg-marine" value="Enviar"></input>
+                        <div class="inline-flex pt-3">
+                            <input type="checkbox" class="block mr-1"></input>
+                            <p class="text-xs text-white">HE LEIDO Y ACEPTO LA POLITICA DE PRIVACIDAD Y EL AVISO LEGAL</p> 
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end five block-->
+       
+    </div>
+
+    <script src="bundle.js"></script>    
+    
+</body>
+</html>
